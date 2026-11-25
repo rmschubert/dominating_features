@@ -123,10 +123,7 @@ The experiments investigate feature dominance and counterfactual generation for 
 
 - **Datasets:** Iris, Breast Cancer Wisconsin Diagnostic, and MNIST.
 - **Validation:** Stratified 5-fold cross-validation.
-- **Models:** One prototype per class, trained with representation factors
-  $$
-  \alpha \in \{0,10^{-3},10^{-2},10^{-1},1\}.
-  $$
+- **Models:** One prototype per class, trained with representation factors $\alpha \in \{0,10^{-3},10^{-2},10^{-1},1\}.$
 - **Distance:** squared Euclidean distance.
 - **Training loss:** ReLU applied to the GLVQ local error, with an additional representation term weighted by $\alpha$.
 - **Preprocessing:** Iris and Breast Cancer features were robustly scaled and then min–max normalized to $[0,1]$. MNIST images were flattened.
@@ -140,7 +137,7 @@ $$
 \mathrm{conf}(\tilde{x}) =
 \frac{1}{|X^+|}
 \sum_{x^j \in X^+}
-\mathbf{1}\!\left(
+\mathbf{1}\left(
 \mathrm{relsim}(x^j)
 <
 \mathrm{relsim}(\tilde{x})
@@ -155,8 +152,8 @@ The paper identifies this repository as the source code for the experiments. Req
 
 To get started:
    ```bash
-   git clone https://github.com/rmschubert/dominating\_features.git
-   cd dominating\_features
+   git clone https://github.com/rmschubert/dominating_features.git
+   cd dominating_features
    ```
 
 ## References
